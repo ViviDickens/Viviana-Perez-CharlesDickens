@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* BIOGRAFÍA */
+/* Header */
+
+.grid_container {  display: grid;
+    grid-template-columns: 0.6fr 2.0fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header_container Header_container Header_container"
+      ". Main ."
+      "Footer Footer Footer";
+  }
+  
+  .Header_container {  display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1.0fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Imagen_Logo navbar";
+    grid-area: Header_container;
+    background-color: rgb(57, 22, 45);
+    border: solid 2px;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Imagen_Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Imagen_Logo img{ 
+    grid-area: Imagen_Logo;
+    
+
+    width: 150px;
+    height: 100px;
+
+  }
+  
+  .navbar { 
+    grid-area: navbar;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navbar__Items{
+    display: flex;
+  }
+  .navbar__Items__Lista{
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+  }
+
+  .nav-link:hover{
+    cursor: pointer;
+    border: solid 3px rgba(57, 7, 57, 0.723);
+    text-shadow: 0 0 5px rgb(242, 131, 232);
+  }
+
+  .Main {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Biografía Biografía Biografía"
+      "Dickens_Bio1 Dickens_Bio1 Dickens_Bio1"
+      "Dickens_Bio2 Dickens_Bio2 Dickens_Bio2"
+      "Dickens_Bio3 Dickens_Bio3 Dickens_Bio3";
+    grid-area: Main;
+    background-color: rgb(233, 225, 230);
+  }
+  
+  .Biografía {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Biografía_title"
+      "parráfo";
+    grid-area: Biografía;
+  }
+  
+  .parráfo { grid-area: parráfo; }
+
+  
+  .Biografía_title { grid-area: Biografía_title; }
+  
+  .Dickens_Bio1 {  display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+    grid-area: Dickens_Bio1;
+  }
+
+  .Dickens_Bio1 img{
+    width: 300px;
+    height: 250px;
+    border: solid 5px color black;
+    border-radius: 15px;
+}
+  
+  .Dickens_Bio2 {  display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+    grid-area: Dickens_Bio2;
+  }
+
+  .Dickens_Bio2 img{
+    width: 300px;
+    height: 250px;
+    border: solid 5px color black;
+    border-radius: 15px;
+}
+  
+  .Dickens_Bio3 {  display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+    grid-area: Dickens_Bio3;
+  }
+  
+  .Dickens_Bio3 img{
+    width: 300px;
+    height: 250px;
+    border: solid 5px color black;
+    border-radius: 15px;
+}
+
+
+.Footer {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo_Twitter logo_Facebook logo_Email logo_Instagram"
+      "logo_Twitter logo_Facebook logo_Email logo_Instagram"
+      "logo_Twitter logo_Facebook logo_Email logo_Instagram";
+    grid-area: Footer;
+    background-color: rgb(57, 22, 45);
+  }
+  
+  .logo_Twitter { grid-area: logo_Twitter; }
+  
+  .logo_Facebook { grid-area: logo_Facebook; }
+  
+  .logo_Instagram { grid-area: logo_Instagram; }
+  
+  .logo_Email { grid-area: logo_Email; }
+
+
+/* Index */ 
+
+.container {  display: grid;
+  grid-template-columns: 1.1fr;
+  grid-template-rows: 0.5fr 2.1fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.header {  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "imagen_Logo navbar";
+  grid-area: header;
+}
+
+.imagen_Logo { grid-area: imagen_Logo; }
+
+.navbar { grid-area: navbar; }
+
+.main {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "portada_Index"
+    "imagenes_Home"
+    "texto";
+  grid-area: main;
+  background-color: antiquewhite;
+}
+.portada_Index img { grid-area: portada_Index; 
+  width: 100%;
+  height: 700px;
+  border: solid 5px color black;
+  border-radius: 15px;
+}
+
+.imagenes_Home { 
+  grid-area: imagenes_Home; 
+  display: flex;
+}
+.imagenes_Home img{
+  width: 400px;
+  height: 200px;
+}
+
+.texto { grid-area: texto;
+color: rgba(62, 14, 50, 0.721);
+font-size: 24px; 
+}
+
+
+h1{
+  font-size: 50px;
+  color: black;
+  font-family: 'Playfair Display', serif;
+}
+
+h2{
+    color: black;
+
+}
+
+h3{
+  background: rgb(122, 87, 148);
+  margin: 10px 10px 0px 10px;
+  padding: 30px;
+  border: solid 1px black;
+  font-family: 'Playfair Display', serif;
+}
+
+
+/* .top_Headerindex{
+    background-color: rgba(48, 14, 39, 0.951); }*/
+
+
+
+/*/background-image: url("imagenes/fondo-principal.jpeg");  */
+   /*  .encabezadoDickens{ 
+        background-image: url("images/fondo_index.jpg");
+        width: 100%;
+        height: 500px;
+        background-size:cover;
+        background-position: center -100px;
+        background-repeat: no-repeat;} */
+
+/* .top_Mainindex{
+    background-color: rgb(225, 175, 218)
+
+}
+
+
+.top_Main__Index{
+    width: 500px;
+    height: 500px;
+    border: solid 5px color black;
+    border-radius: 15px;
+    background-position: center -100px;
+    
+
+} */
+
+
+/* h3{
+    background: rgb(220, 244, 41);
+    margin: 10px 10px 0px 10px;
+    padding: 30px;
+    border: solid 1px black;
+    
+} */
+
+/* Footer */
+/* .top_Footerindex{
+    background-color: rgb(182, 137, 170);
+} */
+
+/* Box modeling para submenú */
+
+/* ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0
+       
+}
+
+li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px
+}
+ */
+
+/* CONTACTO */
+/* Header */
+/* .top_Headercontacto{
+    background-color: rgb(243, 130, 216);
+}
+
+h2{
+    font-size: 30px;
+    color: rgb(64, 32, 51);
+    font-family: 'Playfair Display', serif;
+ }
+
+ 
+h4{
+    font-size: 30px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+ }
+
+.formulario{
+    font-size: 20px;
+    color: rgb(208, 16, 230);
+    font-family: 'Playfair Display', serif;
+ } */
+
+
+/* Main */
+/* .top_Maincontacto{
+    background-color: rgb(48, 10, 44);
+    width: 100%;
+    height: 500px;
+} */
+
+
+/* MUSEO */
+/* Header */
+
+/* .top_Headermuseo{
+    background-color: rgba(241, 190, 227, 0.951);
+} */
+
+/* Main */
+
+/* .top_Mainmuseo{
+    background-color: rgb(225, 175, 218)
+
+} */
+
+
+@media only screen and (max-width: 360px) {
+    
+  .top_Main{
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .top_Footer{
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+}
