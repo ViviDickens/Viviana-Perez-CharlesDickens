@@ -5,7 +5,7 @@
 /* BIOGRAFÍA */
 /* Header */
 
-.grid_container {  display: grid;
+/* .grid_container {  display: grid;
     grid-template-columns: 0.6fr 2.0fr;
     grid-template-rows: 0.5fr;
     gap: 0px 0px;
@@ -26,7 +26,7 @@
     grid-area: Header_container;
     background-color: rgb(57, 22, 45);
     border: solid 2px;
-  }
+  } */
   .navbar{
     display: flex;
     align-items: center;
@@ -67,8 +67,8 @@
     text-shadow: 0 0 5px rgb(242, 131, 232);
   }
 
-  .Main {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+/*   .Main {  display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -139,15 +139,16 @@
     grid-template-areas:
       ". .";
     grid-area: Dickens_Bio3;
-  }
+  } */
   
-  .Dickens_Bio3 img{
-    width: 300px;
-    height: 250px;
-    border: solid 5px color black;
-    border-radius: 15px;
+  .img-fluid rounded-start {
+   display: flexbox;
+   justify-content: center;
 }
 
+.col-md-4 {
+  display: flex;
+}
 
 .Footer {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -348,19 +349,24 @@ h4{
 } */
 
 
-/* MUSEO */
+   MUSEO 
 /* Header */
 
-/* .top_Headermuseo{
+ .top_Headermuseo{
     background-color: rgba(241, 190, 227, 0.951);
-} */
+} 
 
-/* Main */
 
-/* .top_Mainmuseo{
-    background-color: rgb(225, 175, 218)
+.top_Mainmuseo{
+  background-color: rgb(58, 9, 55);
 
-} */
+} 
+
+.museo-text{
+  grid-area: texto;
+    color: rgba(236, 216, 231, 0.871);
+    font-size: 24px; 
+  }
 
 
 @media only screen and (max-width: 360px) {
@@ -382,5 +388,21 @@ h4{
       flex-wrap: wrap;
       justify-content: center;
   }
+  
+}
+
+.carousel-item img{
+width: 50px;
+height: 600px;
+}
+.main_Oliteraria{
+  margin: 5px 5px 5px 5px;
+  background-color: rgb(58, 9, 55);
+}
+
+/* Contacto */
+
+.main_Formulario{
+  background-color: rgb(186, 102, 181);
   
 }
