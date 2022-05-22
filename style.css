@@ -235,12 +235,12 @@ font-size: 24px;
 
 h1{
   font-size: 50px;
-  color: black;
+  color: rgb(49, 3, 41);
   font-family: 'Playfair Display', serif;
 }
 
 h2{
-    color: black;
+    color: rgb(27, 5, 23);
 
 }
 
@@ -356,15 +356,18 @@ h4{
     background-color: rgba(241, 190, 227, 0.951);
 } 
 
+.Imagen_Logo{
+  background-color: rgb(57, 22, 45);
+}
 
 .top_Mainmuseo{
-  background-color: rgb(58, 9, 55);
+  background-color: rgb(124, 44, 119);
 
 } 
 
 .museo-text{
   grid-area: texto;
-    color: rgba(236, 216, 231, 0.871);
+    color: black;
     font-size: 24px; 
   }
 
