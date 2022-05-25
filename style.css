@@ -5,28 +5,6 @@
 /* BIOGRAFÍA */
 /* Header */
 
-/* .grid_container {  display: grid;
-    grid-template-columns: 0.6fr 2.0fr;
-    grid-template-rows: 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Header_container Header_container Header_container"
-      ". Main ."
-      "Footer Footer Footer";
-  }
-  
-  .Header_container {  display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
-    grid-template-rows: 1.0fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Imagen_Logo navbar";
-    grid-area: Header_container;
-    background-color: rgb(57, 22, 45);
-    border: solid 2px;
-  } */
   .navbar{
     display: flex;
     align-items: center;
@@ -67,80 +45,7 @@
     text-shadow: 0 0 5px rgb(242, 131, 232);
   }
 
-/*   .Main {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Biografía Biografía Biografía"
-      "Dickens_Bio1 Dickens_Bio1 Dickens_Bio1"
-      "Dickens_Bio2 Dickens_Bio2 Dickens_Bio2"
-      "Dickens_Bio3 Dickens_Bio3 Dickens_Bio3";
-    grid-area: Main;
-    background-color: rgb(233, 225, 230);
-  }
-  
-  .Biografía {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Biografía_title"
-      "parráfo";
-    grid-area: Biografía;
-  }
-  
-  .parráfo { grid-area: parráfo; }
 
-  
-  .Biografía_title { grid-area: Biografía_title; }
-  
-  .Dickens_Bio1 {  display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". .";
-    grid-area: Dickens_Bio1;
-  }
-
-  .Dickens_Bio1 img{
-    width: 300px;
-    height: 250px;
-    border: solid 5px color black;
-    border-radius: 15px;
-}
-  
-  .Dickens_Bio2 {  display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". .";
-    grid-area: Dickens_Bio2;
-  }
-
-  .Dickens_Bio2 img{
-    width: 300px;
-    height: 250px;
-    border: solid 5px color black;
-    border-radius: 15px;
-}
-  
-  .Dickens_Bio3 {  display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". .";
-    grid-area: Dickens_Bio3;
-  } */
-  
   .img-fluid rounded-start {
    display: flexbox;
    justify-content: center;
@@ -173,6 +78,16 @@
 
 
 /* Index */ 
+
+.col{
+  border: solid 1px ;
+}
+
+.imagen_Fondo{
+
+width: 190px;
+height: 140px;
+}
 
 .container {  display: grid;
   grid-template-columns: 1.1fr;
@@ -252,101 +167,6 @@ h3{
   font-family: 'Playfair Display', serif;
 }
 
-
-/* .top_Headerindex{
-    background-color: rgba(48, 14, 39, 0.951); }*/
-
-
-
-/*/background-image: url("imagenes/fondo-principal.jpeg");  */
-   /*  .encabezadoDickens{ 
-        background-image: url("images/fondo_index.jpg");
-        width: 100%;
-        height: 500px;
-        background-size:cover;
-        background-position: center -100px;
-        background-repeat: no-repeat;} */
-
-/* .top_Mainindex{
-    background-color: rgb(225, 175, 218)
-
-}
-
-
-.top_Main__Index{
-    width: 500px;
-    height: 500px;
-    border: solid 5px color black;
-    border-radius: 15px;
-    background-position: center -100px;
-    
-
-} */
-
-
-/* h3{
-    background: rgb(220, 244, 41);
-    margin: 10px 10px 0px 10px;
-    padding: 30px;
-    border: solid 1px black;
-    
-} */
-
-/* Footer */
-/* .top_Footerindex{
-    background-color: rgb(182, 137, 170);
-} */
-
-/* Box modeling para submenú */
-
-/* ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 0
-       
-}
-
-li {
-    display: inline-block;
-    width: 25%;
-    position: relative;
-    font-size: 14px
-}
- */
-
-/* CONTACTO */
-/* Header */
-/* .top_Headercontacto{
-    background-color: rgb(243, 130, 216);
-}
-
-h2{
-    font-size: 30px;
-    color: rgb(64, 32, 51);
-    font-family: 'Playfair Display', serif;
- }
-
- 
-h4{
-    font-size: 30px;
-    color: white;
-    font-family: 'Playfair Display', serif;
- }
-
-.formulario{
-    font-size: 20px;
-    color: rgb(208, 16, 230);
-    font-family: 'Playfair Display', serif;
- } */
-
-
-/* Main */
-/* .top_Maincontacto{
-    background-color: rgb(48, 10, 44);
-    width: 100%;
-    height: 500px;
-} */
 
 
    MUSEO 
