@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "logo_Twitter logo_Facebook logo_Email logo_Instagram" "logo_Twitter logo_Facebook logo_Email logo_Instagram" "logo_Twitter logo_Facebook logo_Email logo_Instagram";
+  grid-area: Footer;
+  background-color: #39162d; }
+
+.logo_Twitter {
+  grid-area: logo_Twitter; }
+
+.logo_Facebook {
+  grid-area: logo_Facebook; }
+
+.logo_Instagram {
+  grid-area: logo_Instagram; }
+
+.logo_Email {
+  grid-area: logo_Email; }
+
+.col {
+  border: solid 1px; }
+
+.imagen_Fondo {
+  width: 190px;
+  height: 140px; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1.1fr;
+  grid-template-rows: 0.5fr 2.1fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "main" "footer"; }
+
+.header {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "imagen_Logo navbar";
+  grid-area: header; }
+
+.imagen_Logo {
+  grid-area: imagen_Logo; }
+
+.navbar {
+  grid-area: navbar; }
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "portada_Index" "imagenes_Home" "texto";
+  grid-area: main;
+  background-color: antiquewhite; }
+
+.imagenes_Home {
+  grid-area: imagenes_Home;
+  display: flex; }
+
+.imagenes_Home img {
+  width: 400px;
+  height: 200px; }
+
+.texto {
+  grid-area: texto;
+  color: rgba(62, 14, 50, 0.721);
+  font-size: 24px; }
+
+h1 {
+  font-size: 50px;
+  color: #310329;
+  font-family: 'Playfair Display', serif; }
+
+h2 {
+  color: #1b0517; }
+
+h3 {
+  background: #7a5794;
+  margin: 10px 10px 0px 10px;
+  padding: 30px;
+  border: solid 1px black;
+  font-family: 'Playfair Display', serif; }

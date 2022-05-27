@@ -1,0 +1,47 @@
+.main {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "portada_Index"
+      "imagenes_Home"
+      "texto";
+    grid-area: main;
+    background-color: antiquewhite;
+  }
+  
+  
+  .imagenes_Home { 
+    grid-area: imagenes_Home; 
+    display: flex;
+  }
+  .imagenes_Home img{
+    width: 400px;
+    height: 200px;
+  }
+  
+  .texto { grid-area: texto;
+  color: rgba(62, 14, 50, 0.721);
+  font-size: 24px; 
+  }
+  
+  
+  h1{
+    font-size: 50px;
+    color: rgb(49, 3, 41);
+    font-family: 'Playfair Display', serif;
+  }
+  
+  h2{
+      color: rgb(27, 5, 23);
+  
+  }
+  
+  h3{
+    background: rgb(122, 87, 148);
+    margin: 10px 10px 0px 10px;
+    padding: 30px;
+    border: solid 1px black;
+    font-family: 'Playfair Display', serif;
+  }

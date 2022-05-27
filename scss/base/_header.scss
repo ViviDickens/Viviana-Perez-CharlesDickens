@@ -1,0 +1,34 @@
+.col{
+    border: solid 1px ;
+  }
+  
+  .imagen_Fondo{
+  
+  width: 190px;
+  height: 140px;
+  }
+  
+  .container {  display: grid;
+    grid-template-columns: 1.1fr;
+    grid-template-rows: 0.5fr 2.1fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  
+  .header {  display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "imagen_Logo navbar";
+    grid-area: header;
+  }
+  
+  .imagen_Logo { grid-area: imagen_Logo; }
+  
+  .navbar { grid-area: navbar; }

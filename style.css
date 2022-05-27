@@ -229,3 +229,41 @@ height: 600px;
   background-color: rgb(186, 102, 181);
   
 }
+
+
+estructura
+
+ul{
+  list-style:none;
+  li{
+      background-color: rgb(97, 17, 97);
+      a{
+          display: block;
+          &:hover{
+              color:rgb(224, 132, 20)
+
+          }
+      }
+  }
+}
+
+section {
+
+  h2{
+      font-size: 24px;
+  }
+  p {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+
+decoracion
+
+
+div{
+  &.footer {
+      background-color: rgb(97, 17, 97);
+  }
+}
+

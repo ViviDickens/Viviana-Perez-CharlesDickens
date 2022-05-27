@@ -1,0 +1,22 @@
+.Footer {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo_Twitter logo_Facebook logo_Email logo_Instagram"
+      "logo_Twitter logo_Facebook logo_Email logo_Instagram"
+      "logo_Twitter logo_Facebook logo_Email logo_Instagram";
+    grid-area: Footer;
+    background-color: rgb(57, 22, 45);
+  }
+  
+  .logo_Twitter { grid-area: logo_Twitter; }
+  
+  .logo_Facebook { grid-area: logo_Facebook; }
+  
+  .logo_Instagram { grid-area: logo_Instagram; }
+  
+  .logo_Email { grid-area: logo_Email; }
+
+
