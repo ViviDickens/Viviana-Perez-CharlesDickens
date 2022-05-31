@@ -54,6 +54,42 @@
 .navbar {
   grid-area: navbar; }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.Imagen_Logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.Imagen_Logo img {
+  grid-area: Imagen_Logo;
+  width: 150px;
+  height: 100px; }
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  justify-content: flex-start; }
+
+.navbar__Items {
+  display: flex; }
+
+.navbar__Items__Lista {
+  display: flex;
+  align-items: center;
+  column-gap: 100px; }
+
+.nav-link:hover {
+  cursor: pointer;
+  border: solid 3px rgba(57, 7, 57, 0.723);
+  text-shadow: 0 0 5px #f283e8; }
+
+.Imagen_Logo {
+  background-color: #39162d; }
+
 .main {
   display: grid;
   grid-template-columns: 1fr;
@@ -82,12 +118,18 @@ h1 {
   color: #310329;
   font-family: 'Playfair Display', serif; }
 
-h2 {
-  color: #1b0517; }
+.imagen_Ingresomuseo {
+  grid-area: imagenes_Home;
+  display: flex;
+  width: 400px;
+  height: 400px; }
 
-h3 {
-  background: #7a5794;
-  margin: 10px 10px 0px 10px;
-  padding: 30px;
-  border: solid 1px black;
-  font-family: 'Playfair Display', serif; }
+.top_Mainmuseo {
+  background-color: #770d70; }
+
+/* Contacto */
+.main_Formulario {
+  background-color: #ba66b5; }
+
+.main_Formulario {
+  padding: 20px 20px 0px 10px; }
