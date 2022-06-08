@@ -24,6 +24,20 @@
 .logo_Email {
   grid-area: logo_Email; }
 
+@media only screen and (max-width: 768px) {
+  .Footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; } }
+
+@media only screen and (max-width: 320px) {
+  .Footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; } }
+
 .col {
   border: solid 1px; }
 
