@@ -104,16 +104,6 @@
 .Imagen_Logo {
   background-color: #39162d; }
 
-.main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 20px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "portada_Index" "imagenes_Home" "texto";
-  grid-area: main;
-  background-color: antiquewhite; }
-
 .imagenes_Home {
   grid-area: imagenes_Home;
   display: flex; }
@@ -133,7 +123,9 @@ h1 {
   font-family: 'Playfair Display', serif; }
 
 .home {
-  background-color: #885785; }
+  background-color: #885785;
+  display: flex;
+  justify-content: center; }
 
 .col-md-8 {
   background-color: #f5fbda; }
@@ -156,6 +148,9 @@ h1 {
   width: 300px;
   height: 600px; }
 
+.main_Oliteraria {
+  background-color: #770d70; }
+
 .imagen_Ingresomuseo {
   grid-area: imagenes_Home;
   display: flex;
@@ -164,6 +159,13 @@ h1 {
 
 .top_Mainmuseo {
   background-color: #770d70; }
+
+.museo_Texto {
+  padding: 5% 2% 5% 2%;
+  margin-bottom: 0em;
+  font-family: 'Joan', serif;
+  font-size: 24px;
+  color: antiquewhite; }
 
 /* Contacto */
 .main_Formulario {
